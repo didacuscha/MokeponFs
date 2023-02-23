@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title> MOKEPON </title>
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <section id="choose-mokepon">
+            <h1 class="title"> MOKEPON </h1>
+
+            <h2 class="subtitle"> Choose your mokepon: </h2>
+
+            <div id='cardsContainer' class="cards">
+              
+            </div>
+
+            <button id="mokepon-button">Choose</button>
+        </section>
+
+        <section id="show-map">
+            <h2 class="subtitle"> Wander with your MOKEPON </h2>
+            <canvas id="map"></canvas>
+            <button onpointerup="stopMovement()" onpointerdown="moveUp()" ontouchend="stopMovement()" ontouchstart="moveUp()"> Up</button>
+            <div>
+                <button onpointerup="stopMovement()" onpointerdown="moveLeft()" ontouchend="stopMovement()" ontouchstart="moveLeft()"> Left</button>
+                <button onpointerup="stopMovement()" onpointerdown="moveDown()" ontouchend="stopMovement()" ontouchstart="moveDown()"> Down </button>
+                <button onpointerup="stopMovement()" onpointerdown="moveRight()" ontouchend="stopMovement()" ontouchstart="moveRight()"> Right</button>
+            </div>
+        </section>
+
+        <section id="choose-attack">
+            <h1 class="title"> MOKEPON </h1>
+            
+            <h2 class="subtitle"> Choose your attack: </h2>
+
+            <div id='containerAttacks'  class="buttons">
+
+            </div> 
+
+            <div id="messages">
+                <p id="result">Good Luck!</p>
+
+                <section id="restart">
+                    <button id="restart-button">Restart</button>
+                </section>
+            </div>
+
+            <div class="attacks">
+                <div class="attacks-player">
+                    <p id="player-lifes">0</p>
+                    <p id="mokepon-player"></p>
+                    <div id="attacks-of-player"></div>
+                </div>
+                <div class="attacks-enemy">
+                    <p id="enemy-lifes">0</p>
+                    <p id="mokepon-enemy"></p>
+                    <div id="attacks-of-enemy"></div>
+                </div> 
+            </div>
+        </section> 
+        <script src="./mokepon.js"></script>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FF7000;
+}
+
+img {
+    mix-blend-mode: multiply;
+}
+
+#choose-mokepon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: rgb(230, 238, 232);
+    font-size: 32px;
+    font-family: 'Fredoka One', cursive;
+   
+}
+
+.subtitle {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.cards, .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.mokepon-card {
+    width: 200px;
+    height: 100px;
+    background: #FFBF00;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.mokepon-card img {
+    width: 80px;
+}
+
+#mokepon-button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+input {
+    display: none; 
+}
+
+input:checked + label {
+    background-color: rgb(249, 160, 72);
+}
+
+#choose-attack {
+    flex-direction: column;
+    align-items: center;
+}
+
+.attack-button{
+    background-color: #FFBF00;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#messages {
+    width: 280px;
+    background: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20x;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#restart-button {
+    border: none;
+    color: #FFBF00;
+    font-family: 'Poppins', sans-serif;
+}
+
+.attacks {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.attacks-player, .attacks-enemy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#show-map {
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#show-map button {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+}
+
+@media(max-width: 640px) {
+    .cards, .buttons {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 300px) {
+    #show-map div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
